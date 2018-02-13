@@ -8,6 +8,8 @@ body {
 	background:url('../images/whitey.png');
 	background-repeat: repeat;
 	color:#777777;
+	overflow-x:hidden;
+	margin-bottom: 110px;
 }
 
 h1, h2, figure, .img-title p {
@@ -35,16 +37,23 @@ p {
 	font-size: 17px;
 }
 
-.container {
-	width:960px;
-	margin:0 auto;
-	position: relative;
+.navbar-brand a {
+	color:#fff !important;
 }
 
-.container:after {
-	clear:both;
-	content:"";
-	display:block;
+.navbar-nav .nav-link {
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.bg-light {
+	background:transparent !important;
+	background-color:transparent !important;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 header, section, aside {
@@ -60,10 +69,16 @@ header {
 	background-color: #4aaaa5;
 	font-size: 32px;
 	text-align: center;
-	color:#fff;
-	padding-top:20px;
+	color:#fff !important;
 	height:50px;
+	padding:15px;
 	transition:padding 0.3s ease-out;
+}
+
+.navbar {
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:0;
 }
 
 figure:hover {
@@ -77,13 +92,14 @@ figure a, figure a:hover, figure a:visited, figure a:focus {
 
 .box {
 	padding:50px 20px;
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .about-img {
 	margin-right:25px;
 	width:230px;
 	float: left;
+	text-align: right;
 	margin-top:10px;
 }
 
@@ -94,13 +110,13 @@ section hr {
  
 .soc-icons {
 	margin-top:10px;
-	width:100%;
+	position: relative;
 }
 
 .soc-icons img {
-	width:29%;
+	width:100%;
 	transition:opacity 0.25s ease-out;
-	padding-right:3%;
+	padding-right:0px;
 }
 
 .soc-icons img:hover {
@@ -109,19 +125,6 @@ section hr {
 
 .soc-icons a:last-child img {
 	padding-right: 0;
-}
-
-aside {
-	width:205px;
-	padding:40px 30px;
-	float:right;
-}
-
-.portfolio-images img {
-	margin-bottom: 40px;
-	width:100%;
-	display:inline-block;
-	max-width:270px;
 }
 
 .left, .right {
@@ -135,13 +138,18 @@ aside {
 .right {
 	float:right;
 }
+.img-title {
+	position: relative;
+	margin-bottom: 25px;
+}
 
-.img-title p {
+.img-title span {
 	background-color: #4aaaa5;
 	color:#fff;
 	text-align: center;
 	position: absolute;
 	top:120px;
+	max-width:300px;
 	padding:7px 0 9px;
 	width:100%;
 	font-size: 19px;
@@ -204,4 +212,59 @@ label {
 
 .btn:hover {
 	opacity: 0.8;
+}
+
+.btn-primary {
+	border: 0;
+}
+
+.row.less-gutters > .col {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right:9px;
+  padding-left:5px;
+}
+
+.row.less-gutters > .col:first-child {
+  padding-left:15px;
+} 
+
+@media (max-width: 576px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+	  padding:8px ;
+	  border-bottom: 1px solid #ccc
+    }
+
+    .img-title {
+    	display:block;
+    	margin:0 auto 20px;
+    	text-align: center;
+    }
+
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+
+@media (max-width: 992px) {
+	.img-title {
+    	display:block;
+    	margin:0 auto 20px;
+    	text-align: center;
+    }
+
+    .portfolio .col-sm-12 {
+      flex: 0 0 94% !important;
+    }
 }
