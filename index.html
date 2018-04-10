@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <title>About Me</title>
 </head>
 
 <header>
-	<div class="container">
-    <figure><a href="index.html">Marina Saladukha</a></figure>
-	<nav>
-	  <ul>
-	  	<li><a href="index.html">About</a></li>
-	  	<li><a href="portfolio.html">Portfolio</a></li>
-	  	<li><a href="contact.html">Contact</a></li>
-    </ul>
-   </nav>
+ <div class="container">
+   <nav class="navbar navbar-expand-md bg-light navbar-light">
+   <a class="navbar-brand" href="#">Marina Saladukha</a>
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+     <ul class="navbar-nav ml-auto">
+       <li class="nav-item active">
+        <a class="nav-link" href="index.html">About</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+       </li>
+     </ul>
+    </div>
+   </nav> 
   </div>
 </header>
 
 <body>
-  <div class="container">
-  	<section id="main">
-  		<h1>About Me</h1>
-  		<hr>
-  		<img class="about-img" src="assets/images/pic-about-me.jpg">
-        <p>Hi, I’m Marina and I’m a Front-End Developer with a strong background in Web Design. I have BA degree in Art + Design from NC State University and I’m currently enrolled into UNC Coding Bootcamp.</p> 
-        <p>On top of my design and coding skillset I’m also certified in Google Analytics and Mobile Sites and have and have experience in working with mail marketing, project management & photography. In my free time I like to travel, listen to podcasts and explore the unknown.</p>
-  	</section>
-  	<aside>
-  		<h2>Connect With Me</h2>
-  		<hr>
-  		<div class="soc-icons">
-  			<a href="https://github.com/ladymarish" target="_blank"><img src="assets/images/github.jpg"></a>
-  			<a href="https://www.linkedin.com/in/saladukha/" target="_blank"><img src="assets/images/linkedin.jpg"></a>
-  			<a href="https://stackoverflow.com/users/2816846/ladymarish" target="_blank"><img src="assets/images/stackoverflow.jpg"></a>
-  		</div>
-  	 </aside>
+  <div id="main" role="main" class="container">
+  	<div class="row">
+      <div class="col-md-8 col-sm-12 col-xs-12">
+      	<div class="box">
+  		  <h1>About Me</h1>
+  		  <hr>
+  		  <img class="about-img" src="assets/images/pic-about-me.jpg">
+		    <p>I am someone who slowly shifted from traditional art to design and eventally to web development. This transition was a rewarding journey which brought a lot of exciting people and opportunities into my life.</p> <p>Throughout my career in the design field I acquired knowledge in digital marketing, printing, branding, and UX design, however my biggest passion remains building websites. When unplugged, I enjoy playing musical instruments and traveling.
+		    </p>
+		</div> 
+  	   </div>
+       <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="box">
+  		  <h2>Connect With Me</h2>
+	  	   <hr>
+	  		   <div class="soc-icons">
+	  		 	  <div class="row">
+	  		      <div class="col">
+	  		       <a href="https://github.com/ladymarish" target="_blank"><img src="assets/images/github.jpg"></a>
+	  		      </div>
+	  		    <div class="col">
+	  		    	<a href="https://www.linkedin.com/in/saladukha/" target="_blank"><img src="assets/images/linkedin.jpg"></a></div>
+	  		    <div class="col">
+	  		      <a href="https://stackoverflow.com/users/2816846/ladymarish" target="_blank"><img src="assets/images/stackoverflow.jpg"></a>
+	  		    </div>
+	  		  </div>
+	  		</div>
+	  	  </div>
+       </div>
+    </div>
   </div>
-</body>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body> 
 
 <footer>
 	<p>© Copyright 2018 Marina Saladukha</p>
